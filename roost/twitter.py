@@ -447,7 +447,7 @@ if __name__ == '__main__':
 	parser = argparse.ArgumentParser(description='A utility for interacting with Twitter')
 	parser.add_argument('--debug','-d',choices=['DEBUG','INFO','WARN','ERROR','FATAL'],default='ERROR',help='set the logging level')
 	parser.add_argument('--profile','-P',help='set the Twitter profile that will be used')
-	parser.add_argument('command',metavar='C',help='the twitter command to perform')
+	parser.add_argument('command',help='the twitter command to perform')
 	parser.add_argument('args',metavar='A',nargs='*',help='arguments for the twitter command')
 	
 	args = parser.parse_args()
@@ -469,6 +469,10 @@ if __name__ == '__main__':
 		screen_name = get_user_identifier(args.args[0])
 		followers = api.get_followers(screen_name)
 		print '\n'.join(map(str,followers))
+	elif args.command == 'friends':
+		screen_name = get_user_identifier(args.args[0])
+		friends = api.get_friends(screen_name)
+		print '\n'.join(map(str,friends))	
 	elif args.command == 'tweet_text':
 		screen_name = get_user_identifier(args.args[0])
 		num_tweets = 10
