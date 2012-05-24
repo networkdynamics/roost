@@ -19,4 +19,4 @@ At present, only the first stage has been completed.
 Contact
 -------
 
-Please email the primary author of the tool with any questions: [Derek Ruths](mailto:druths@networkdynamics.org>).
+Please email the primary author of the tool, [Derek Ruths](mailto:druths@networkdynamics.org>), with any questions.
