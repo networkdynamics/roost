@@ -5,7 +5,7 @@ import os.path
 import sys
 
 setup(
-	name = 'Roost Twitter Data Library',
+	name = 'roost',
 	version = '0.1',
 	#cmdclass = {'build_ext': build_ext},
 	#ext_modules = ext_modules,
