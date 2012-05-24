@@ -13,7 +13,7 @@ setup(
 	scripts = ['scripts/rtwtr'],
 	
 	# dependencies
-	install_requires = ['oauth2>=1.5'],
+	install_requires = ['oauth2>=1.5','pycurl>=7.18'],
 	
 	# project metadata
 	author = 'Derek Ruths',
