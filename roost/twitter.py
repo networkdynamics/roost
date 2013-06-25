@@ -11,13 +11,13 @@ logger = logging.getLogger('roost.spider.twitter')
 
 __all__ = ['TwitterAPI']
 
-user_timeline_url = 'http://api.twitter.com/1/statuses/user_timeline.json'
-friends_url = 'http://api.twitter.com/1/friends/ids.json'
-followers_url = 'http://api.twitter.com/1/followers/ids.json'
-profile_url = 'http://api.twitter.com/1/users/show.json'
-rate_limit_url = 'http://api.twitter.com/1/account/rate_limit_status.json'
-tweet_url = 'http://api.twitter.com/1/statuses/show.json'
-home_timeline_url = 'http://api.twitter.com/1/statuses/home_timeline.json'
+user_timeline_url = 'http://api.twitter.com/1.1/statuses/user_timeline.json'
+friends_url = 'http://api.twitter.com/1.1/friends/ids.json'
+followers_url = 'http://api.twitter.com/1.1/followers/ids.json'
+profile_url = 'http://api.twitter.com/1.1/users/show.json'
+rate_limit_url = 'http://api.twitter.com/1.1/account/rate_limit_status.json'
+tweet_url = 'http://api.twitter.com/1.1/statuses/show.json'
+home_timeline_url = 'http://api.twitter.com/1.1/statuses/home_timeline.json'
 
 SUCCESS_RESP = '200'
 NOT_MODIFIED_RESP = '304'
